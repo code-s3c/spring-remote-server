@@ -72,7 +72,7 @@
     <security:http auto-config="true">
         <security:csrf disabled="true"/>
         <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')"/>
-        <security:intercept-url pattern="/complexMathCalculatorService" access="permitAll"/>
+        <security:intercept-url pattern="/complexMathCalculatorService" access="hasRole('ROLE_USER')"/>
     </security:http>
     
     <!-- Security Provider -->
